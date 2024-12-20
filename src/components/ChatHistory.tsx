@@ -1,12 +1,16 @@
-import React from 'react';
+
 import { MessageSquare, Plus } from 'lucide-react';
 
-type ChatHistoryProps = {
-  chats: Array<{ id: string; title: string }>;
-  onSelectChat: (id: string) => void;
-  selectedChatId: string;
+type Chat = {
+  readonly id: string;
+  readonly title: string;
 };
 
+type ChatHistoryProps = {
+  readonly chats: readonly Chat[];
+  readonly onSelectChat: (id: string) => void;
+  readonly selectedChatId: string;
+};
 export default function ChatHistory({ chats, onSelectChat, selectedChatId }: ChatHistoryProps) {
   return (
     <div className="w-64 bg-gray-900 h-screen flex flex-col">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import ChatHistory from './components/ChatHistory';
 import ChatMessage from './components/ChatMessage';
 import ChatInput from './components/ChatInput';

@@ -1,9 +1,8 @@
-import React from 'react';
 import { Bot, User } from 'lucide-react';
 
 type MessageProps = {
-  content: string;
-  isBot: boolean;
+  readonly content: string;
+  readonly isBot: boolean;
 };
 
 export default function ChatMessage({ content, isBot }: MessageProps) {

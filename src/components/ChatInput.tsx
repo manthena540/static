@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Send, RotateCcw } from 'lucide-react';
 
 type ChatInputProps = {
-  onSendMessage: (message: string) => void;
-  onRefresh: () => void;
+  readonly onSendMessage: (message: string) => void;
+  readonly onRefresh: () => void;
 };
 
 export default function ChatInput({ onSendMessage, onRefresh }: ChatInputProps) {
